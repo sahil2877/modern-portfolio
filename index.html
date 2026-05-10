@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sahil Belim personal portfolio website">
+    <title>Sahil Belim | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="preloader" id="preloader" aria-hidden="true">
+        <div class="preloader-noise"></div>
+        <div class="preloader-content">
+            <div class="preloader-mark">SB</div>
+            <p class="preloader-kicker">Initializing Portfolio</p>
+            <h2>Sahil Belim</h2>
+            <div class="preloader-line">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <canvas class="scene-canvas" id="sceneCanvas" aria-hidden="true"></canvas>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <div class="background-marquee" aria-hidden="true">
+        <div class="marquee-track marquee-track-one">
+            <span>Web Developer</span>
+            <span>Computer Engineering</span>
+            <span>Frontend</span>
+            <span>MERN Stack</span>
+            <span>Problem Solver</span>
+            <span>Responsive Design</span>
+            <span>Web Developer</span>
+            <span>Computer Engineering</span>
+            <span>Frontend</span>
+            <span>MERN Stack</span>
+            <span>Problem Solver</span>
+            <span>Responsive Design</span>
+        </div>
+        <div class="marquee-track marquee-track-two">
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Django</span>
+            <span>MongoDB</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Django</span>
+            <span>MongoDB</span>
+            <span>MySQL</span>
+        </div>
+        <div class="marquee-track marquee-track-three">
+            <span>Clean UI</span>
+            <span>Full Stack Projects</span>
+            <span>Learning By Building</span>
+            <span>GitHub</span>
+            <span>Portfolio</span>
+            <span>Innovation</span>
+            <span>Clean UI</span>
+            <span>Full Stack Projects</span>
+            <span>Learning By Building</span>
+            <span>GitHub</span>
+            <span>Portfolio</span>
+            <span>Innovation</span>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Sahil<span>Belim</span></a>
+
+            <button class="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" type="button" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/sahil2877" target="_blank" rel="noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sahilbelim" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-orbit" aria-hidden="true">
+                <span class="orbit-object orbit-object-one"></span>
+                <span class="orbit-object orbit-object-two"></span>
+                <span class="orbit-object orbit-object-three"></span>
+            </div>
+
+            <div class="hero-grid">
+                <div class="hero-content reveal">
+                    <p class="hero-label">Portfolio / Web Developer / Student</p>
+                    <h1>Hi, I'm<br><span class="gradient-name">Sahil Belim</span></h1>
+
+                    <div class="typing-container">
+                        <span class="typing-prefix">I am a </span>
+                        <span class="typed-text"></span>
+                        <span class="cursor"></span>
+                    </div>
+
+                    <p class="hero-description">
+                        I am Sahil Belim, a pre-final year Computer Engineering student who enjoys creating responsive,
+                        practical and visually polished web projects using HTML, CSS, JavaScript and full stack tools.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stat-card reveal">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-card reveal">
+                            <span class="stat-number" data-target="1">0</span>
+                            <span class="stat-label">Internship / Training</span>
+                        </div>
+                        <div class="stat-card reveal">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Technologies Learned</span>
+                        </div>
+                        <div class="stat-card reveal">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Mini Projects</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="Sahil_Belim_Resume (1).pdf" class="btn btn-secondary" target="_blank" rel="noreferrer">View Resume</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="hero-image reveal">
+                    <div class="image-card">
+                        <img
+                            src="12302040701154_SahilmiyaBelim.jpg"
+                            alt="Portrait of Sahil Belim"
+                            class="profile-image"
+                        >
+                        <span class="image-shine" aria-hidden="true"></span>
+                        <div class="hero-badge badge-bottom">MERN Stack</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-spacing">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">About</p>
+                    <h2 class="section-title">A little about me</h2>
+                </div>
+
+                <div class="about-layout">
+                    <div class="about-card reveal">
+                        <h3>Pre-final year Computer Engineering student</h3>
+                        <p>
+                            I enjoy learning by building. My current focus is web development, UI improvement and
+                            creating useful solutions that feel clean, responsive and easy to use.
+                        </p>
+                        <p>
+                            I have worked with frontend tools like HTML, CSS, JavaScript and React, and I also have
+                            experience with backend technologies such as Python, Django, Node.js, MySQL and MongoDB.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <div class="highlight-card reveal">
+                            <i class="fas fa-code"></i>
+                            <h4>Frontend Focus</h4>
+                            <p>Responsive layouts, clean UI and modern interactions.</p>
+                        </div>
+                        <div class="highlight-card reveal">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>Problem Solving</h4>
+                            <p>Building real-world projects to improve practical skills.</p>
+                        </div>
+                        <div class="highlight-card reveal">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Always Learning</h4>
+                            <p>Continuously exploring better tools and development practices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-soft-skill about-card reveal">
+                    <h3>Soft Skill</h3>
+                    <p>
+                        I am a Computer Engineering student with strong discipline, adaptability, and a continuous
+                        learning mindset. My experience at Jawahar Navodaya Vidyalaya has helped me develop teamwork,
+                        communication, and time management skills. I am a quick learner who enjoys solving problems and
+                        taking on new challenges. I stay focused on improving myself and working consistently towards
+                        my goals. I believe in collaboration and maintaining a positive, growth-oriented approach.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section section-spacing">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Skills</p>
+                    <h2 class="section-title">Skills & <span class="title-accent">Technologies</span></h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category reveal">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Programming & Development</h3>
+                        </div>
+
+                        <div class="skill-block">
+                            <h4>Languages</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-block">
+                            <h4>Web Technologies</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fab fa-html5"></i> HTML</span>
+                                <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                                <span class="skill-tag"><i class="fab fa-react"></i> React.js</span>
+                                <span class="skill-tag"><i class="fab fa-angular"></i> Angular.js</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-block">
+                            <h4>Development</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fas fa-laptop-code"></i> Frontend Development</span>
+                                <span class="skill-tag"><i class="fas fa-server"></i> Backend Development</span>
+                                <span class="skill-tag"><i class="fas fa-layer-group"></i> Full Stack Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Backend & Database</h3>
+                        </div>
+
+                        <div class="skill-block">
+                            <h4>Backend Technologies</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fas fa-leaf"></i> Django</span>
+                                <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-block">
+                            <h4>Databases</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fas fa-database"></i> MongoDB</span>
+                                <span class="skill-tag"><i class="fas fa-server"></i> MySQL</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-block">
+                            <h4>Development</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fas fa-plug"></i> API Integration</span>
+                                <span class="skill-tag"><i class="fas fa-gears"></i> CRUD Operations</span>
+                                <span class="skill-tag"><i class="fas fa-sitemap"></i> System Building</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-box">
+                                <i class="fas fa-toolbox"></i>
+                            </div>
+                            <h3>Tools & Workflow</h3>
+                        </div>
+
+                        <div class="skill-block">
+                            <h4>Development Tools</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                                <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                                <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-block">
+                            <h4>Web Practices</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fas fa-mobile-screen"></i> Responsive Design</span>
+                                <span class="skill-tag"><i class="fas fa-wand-magic-sparkles"></i> UI Improvement</span>
+                                <span class="skill-tag"><i class="fas fa-bolt"></i> Performance Focus</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-block">
+                            <h4>Development Style</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fas fa-people-group"></i> Team Collaboration</span>
+                                <span class="skill-tag"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+                                <span class="skill-tag"><i class="fas fa-book-open"></i> Continuous Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience-section section-spacing">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Experience</p>
+                    <h2 class="section-title">My learning journey</h2>
+                </div>
+
+                <div class="experience-grid">
+                    <article class="experience-card reveal">
+                        <span class="experience-tag">Development</span>
+                        <h3>Academic & personal projects</h3>
+                        <p>Built practical web projects with frontend, backend and database integration.</p>
+                    </article>
+                    <article class="experience-card reveal">
+                        <span class="experience-tag">Collaboration</span>
+                        <h3>Team-based work</h3>
+                        <p>Worked with teams on project ideas, UI improvements and feature development.</p>
+                    </article>
+                    <article class="experience-card reveal">
+                        <span class="experience-tag">Growth</span>
+                        <h3>Continuous improvement</h3>
+                        <p>Regularly practicing JavaScript, responsive design and problem solving through hands-on work.</p>
+                    </article>
+                </div>
+
+                <div class="credentials-block reveal">
+                    <div class="credentials-heading">
+                        <p class="section-kicker">Credentials</p>
+                        <h3>Skill badges, certificates, and certifications earned</h3>
+                    </div>
+
+                    <div class="credentials-grid">
+                        <article class="credential-card reveal">
+                            <div class="credential-card-inner">
+                                <div class="credential-face credential-front">
+                                    <i class="fas fa-brain"></i>
+                                    <h4>Innovating with Google Cloud Artificial Intelligence</h4>
+                                    <p>Earned Dec 12, 2025 EST</p>
+                                </div>
+                                <div class="credential-face credential-back">
+                                    <img src="badges/Innovating with Google Cloud Artificial Intelligence.png" alt="Innovating with Google Cloud Artificial Intelligence badge">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="credential-card reveal">
+                            <div class="credential-card-inner">
+                                <div class="credential-face credential-front">
+                                    <i class="fas fa-shield-halved"></i>
+                                    <h4>Trust and Security with Google Cloud</h4>
+                                    <p>Earned Dec 12, 2025 EST</p>
+                                </div>
+                                <div class="credential-face credential-back">
+                                    <img src="badges/Trust and Security with Google Cloud.png" alt="Trust and Security with Google Cloud badge">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="credential-card no-flip reveal">
+                            <div class="credential-card-inner">
+                                <div class="credential-face credential-front">
+                                    <i class="fas fa-gamepad"></i>
+                                    <h4>The Arcade Trivia February 2024 Week 1</h4>
+                                    <p>Earned Feb 28, 2024 EST</p>
+                                </div>
+                            </div>
+                        </article>
+                        <a class="credential-card reveal" href="https://www.skills.google/public_profiles/eeff5387-15d2-46fc-b56f-9002278e846d/badges/6245359" target="_blank" rel="noreferrer">
+                            <div class="credential-card-inner">
+                                <div class="credential-face credential-front">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h4>Scaling with Google Cloud Operations</h4>
+                                    <p>Earned Nov 22, 2023 EST</p>
+                                </div>
+                                <div class="credential-face credential-back">
+                                    <img src="badges/Scaling with Google Cloud Operations.png" alt="Scaling with Google Cloud Operations badge">
+                                </div>
+                            </div>
+                        </a>
+                        <a class="credential-card reveal" href="https://www.skills.google/public_profiles/eeff5387-15d2-46fc-b56f-9002278e846d/badges/6245198" target="_blank" rel="noreferrer">
+                            <div class="credential-card-inner">
+                                <div class="credential-face credential-front">
+                                    <i class="fas fa-server"></i>
+                                    <h4>Modernize Infrastructure and Applications with Google Cloud</h4>
+                                    <p>Earned Nov 22, 2023 EST</p>
+                                </div>
+                                <div class="credential-face credential-back">
+                                    <img src="badges/Modernize Infrastructure and Applications with Google Cloud.png" alt="Modernize Infrastructure and Applications with Google Cloud badge">
+                                </div>
+                            </div>
+                        </a>
+                        <a class="credential-card reveal" href="https://www.skills.google/public_profiles/eeff5387-15d2-46fc-b56f-9002278e846d/badges/6245050" target="_blank" rel="noreferrer">
+                            <div class="credential-card-inner">
+                                <div class="credential-face credential-front">
+                                    <i class="fas fa-cloud"></i>
+                                    <h4>Digital Transformation with Google Cloud</h4>
+                                    <p>Earned Nov 22, 2023 EST</p>
+                                </div>
+                                <div class="credential-face credential-back">
+                                    <img src="badges/Digital Transformation with Google Cloud.png" alt="Digital Transformation with Google Cloud badge">
+                                </div>
+                            </div>
+                        </a>
+                        <a class="credential-card reveal" href="https://www.skills.google/public_profiles/eeff5387-15d2-46fc-b56f-9002278e846d/badges/6244967" target="_blank" rel="noreferrer">
+                            <div class="credential-card-inner">
+                                <div class="credential-face credential-front">
+                                    <i class="fas fa-database"></i>
+                                    <h4>Exploring Data Transformation with Google Cloud</h4>
+                                    <p>Earned Nov 22, 2023 EST</p>
+                                </div>
+                                <div class="credential-face credential-back">
+                                    <img src="badges/Exploring Data Transformation with Google Cloud.png" alt="Exploring Data Transformation with Google Cloud badge">
+                                </div>
+                            </div>
+                        </a>
+                        <a class="credential-card reveal" href="https://www.skills.google/public_profiles/eeff5387-15d2-46fc-b56f-9002278e846d/badges/6244662" target="_blank" rel="noreferrer">
+                            <div class="credential-card-inner">
+                                <div class="credential-face credential-front">
+                                    <i class="fas fa-scale-balanced"></i>
+                                    <h4>Introduction to Responsible AI</h4>
+                                    <p>Earned Nov 22, 2023 EST</p>
+                                </div>
+                                <div class="credential-face credential-back">
+                                    <img src="badges/Introduction to Responsible AI.png" alt="Introduction to Responsible AI badge">
+                                </div>
+                            </div>
+                        </a>
+                        <a class="credential-card reveal" href="https://www.skills.google/public_profiles/eeff5387-15d2-46fc-b56f-9002278e846d/badges/6244560" target="_blank" rel="noreferrer">
+                            <div class="credential-card-inner">
+                                <div class="credential-face credential-front">
+                                    <i class="fas fa-wand-magic-sparkles"></i>
+                                    <h4>Introduction to Generative AI</h4>
+                                    <p>Earned Nov 22, 2023 EST</p>
+                                </div>
+                                <div class="credential-face credential-back">
+                                    <img src="badges/Introduction to Generative AI.png" alt="Introduction to Generative AI badge">
+                                </div>
+                            </div>
+                        </a>
+                        <a class="credential-card reveal" href="https://www.skills.google/public_profiles/eeff5387-15d2-46fc-b56f-9002278e846d/badges/6237543" target="_blank" rel="noreferrer">
+                            <div class="credential-card-inner">
+                                <div class="credential-face credential-front">
+                                    <i class="fas fa-language"></i>
+                                    <h4>Introduction to Large Language Models</h4>
+                                    <p>Earned Nov 22, 2023 EST</p>
+                                </div>
+                                <div class="credential-face credential-back">
+                                    <img src="badges/Introduction to Large Language Models.png" alt="Introduction to Large Language Models badge">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-showcase reveal">
+                    <div class="credentials-heading">
+                        <p class="section-kicker">Certificates</p>
+                        <h3>Main certificates showcase</h3>
+                    </div>
+
+                    <div class="certificate-grid">
+                        <a class="certificate-card reveal" href="certificates/AI_tutorial_IBM_SkillBuild.pdf" target="_blank" rel="noreferrer">
+                            <span class="certificate-icon"><i class="fas fa-certificate"></i></span>
+                            <div>
+                                <p class="certificate-source">IBM SkillsBuild</p>
+                                <h4>AI Tutorial Certificate</h4>
+                                <span>View Certificate</span>
+                            </div>
+                        </a>
+                        <a class="certificate-card reveal" href="certificates/aiml%20full%20course%20certi.pdf" target="_blank" rel="noreferrer">
+                            <span class="certificate-icon"><i class="fas fa-robot"></i></span>
+                            <div>
+                                <p class="certificate-source">AI / ML</p>
+                                <h4>AI/ML Full Course Certificate</h4>
+                                <span>View Certificate</span>
+                            </div>
+                        </a>
+                        <a class="certificate-card reveal" href="certificates/certificate%20%281%29.pdf" target="_blank" rel="noreferrer">
+                            <span class="certificate-icon"><i class="fas fa-award"></i></span>
+                            <div>
+                                <p class="certificate-source">Certification of Participation</p>
+                                <h4>SAP Code Unnati Innovation Marathon 2025-26</h4>
+                                <span>View Certificate</span>
+                            </div>
+                        </a>
+                        <a class="certificate-card reveal" href="certificates/Certificate.pdf" target="_blank" rel="noreferrer">
+                            <span class="certificate-icon"><i class="fas fa-medal"></i></span>
+                            <div>
+                                <p class="certificate-source">Achievement</p>
+                                <h4>SAP Code Unnati - Emerging Technologies Certification</h4>
+                                <span>View Certificate</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section section-spacing">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Projects</p>
+                    <h2 class="section-title">Some of my work</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <span class="project-icon"><i class="fas fa-briefcase"></i></span>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <h3>Smart Workforce Resource Allocation System</h3>
+                        <p>Full stack platform for managing attendance, payroll, leave and task distribution with role-based access.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary">View</a>
+                            <a href="https://github.com/sahil2877/Smart-Workforce-Resource-Allocation-System/" class="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <span class="project-icon"><i class="fas fa-city"></i></span>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <h3>Smart City Management System</h3>
+                        <p>Complaint and infrastructure issue management website with admin controls, updates and request monitoring.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary">View</a>
+                            <a href="https://github.com/sahil2877/smart-city-management-system" class="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <span class="project-icon"><i class="fas fa-tools"></i></span>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                            </div>
+                        </div>
+                        <h3>Service Management System</h3>
+                        <p>Application for handling customer requests and service workflows with complete CRUD operations.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary">View</a>
+                            <a href="https://github.com/sahil2877/service-management-system" class="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education-section section-spacing">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Education</p>
+                    <h2 class="section-title">Academic background</h2>
+                </div>
+
+                <div class="education-timeline">
+                    <span class="timeline-line" aria-hidden="true"></span>
+                    <article class="education-item reveal">
+                        <div class="education-date">2023 - 2027</div>
+                        <div class="education-content">
+                            <div class="education-header">
+                                <img src="MBIT logo.png" alt="MBIT logo" class="education-logo">
+                                <h3>Bachelor of Technology - Computer Engineering</h3>
+                            </div>
+                            <p class="education-school">Charutar Vidhya Mandal University | Madhuben and Bhanubhai Patel Institute of Technology</p>
+                            <span class="education-grade">CGPA: 8.09 / 10</span>
+                        </div>
+                    </article>
+
+                    <article class="education-item reveal">
+                        <div class="education-date">2023</div>
+                        <div class="education-content">
+                            <div class="education-header">
+                                <img src="jnv logo.png" alt="Jawahar Navodaya Vidyalaya logo" class="education-logo">
+                                <h3>12th - Gujarat Board</h3>
+                            </div>
+                            <p class="education-school">Jawahar Navodaya Vidyalaya | Anand, Gujarat</p>
+                            <span class="education-grade">84%</span>
+                        </div>
+                    </article>
+
+                    <article class="education-item reveal">
+                        <div class="education-date">2021</div>
+                        <div class="education-content">
+                            <div class="education-header">
+                                <img src="jnv logo.png" alt="Jawahar Navodaya Vidyalaya logo" class="education-logo">
+                                <h3>10th - Gujarat Board</h3>
+                            </div>
+                            <p class="education-school">Jawahar Navodaya Vidyalaya | Anand, Gujarat</p>
+                            <span class="education-grade">76%</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section-spacing">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Contact</p>
+                    <h2 class="section-title">Let us connect</h2>
+                </div>
+
+                <div class="contact-layout">
+                    <div class="contact-info reveal">
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h3>Name</h3>
+                                <p>Sahil Belim</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>sahilbelim5399@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <button type="button" class="phone-reveal-btn" id="phoneRevealBtn">Show Number</button>
+                                <p class="phone-number" id="phoneNumber" hidden>+91 9924447860</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Anand, Gujarat, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form reveal" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                            <small class="error-text"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                            <small class="error-text"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+                            <small class="error-text"></small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-button">Send Message</button>
+                        <p class="form-status" id="formStatus"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <div class="footer-brand reveal">
+                <a href="#home" class="logo">Sahil<span>Belim</span></a>
+                <p>
+                    Computer Engineering student building responsive web experiences,
+                    full stack projects, and practical AI/cloud learning.
+                </p>
+            </div>
+
+            <div class="footer-links reveal">
+                <h3>Explore</h3>
+                <nav aria-label="Footer navigation">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+
+            <div class="footer-contact reveal">
+                <h3>Connect</h3>
+                <a href="mailto:sahilbelim5399@gmail.com">sahilbelim5399@gmail.com</a>
+                <div class="footer-socials">
+                    <a href="https://github.com/sahil2877" target="_blank" rel="noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sahilbelim" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© 2026 Sahil Belim. All rights reserved.</p>
+            <a href="#home">Back to top</a>
+        </div>
+    </footer>
+
+    <div class="chatbot">
+        <button class="chatbot-toggle" type="button" aria-label="Open chatbot">
+            <i class="fas fa-comments"></i>
+        </button>
+
+        <div class="chatbot-panel">
+            <div class="chatbot-header">
+                <div>
+                    <h3>Ask about Sahil</h3>
+                    <p>Simple FAQ chatbot</p>
+                </div>
+                <button class="chatbot-close" type="button" aria-label="Close chatbot">
+                    <i class="fas fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="chatbot-messages" id="chatMessages">
+                <div class="message bot-message">
+                    Hi! Ask me about skills, projects, education, contact or internship availability.
+                </div>
+            </div>
+
+            <div class="quick-questions">
+                <button type="button" class="quick-question">What skills do you have?</button>
+                <button type="button" class="quick-question">Tell me about your projects</button>
+                <button type="button" class="quick-question">Are you available for internships?</button>
+            </div>
+
+            <form class="chatbot-form" id="chatbotForm">
+                <input type="text" id="chatbotInput" placeholder="Type your question...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
